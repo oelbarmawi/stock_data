@@ -5,7 +5,10 @@ def main():
 	account_size = 5000
 	percent_diff_list = []
 	info = {}
-	filename = sys.argv[1]
+
+	filename = sys.argv[1] if len(sys.argv) > 1 else print("Please enter filename.")
+	if not filename:
+		sys.exit()
 
 	print("-"*50)
 	with open(filename, encoding='utf-8') as file:
