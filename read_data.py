@@ -20,7 +20,10 @@ def main():
 					shares = str(account_size // high)
 					percent_diff = round(abs(high - low) / ((high + low) / 2) * 100, 2)
 					percent_diff_list.append(percent_diff)
+					target = round(high + high * 0.1, 2)
+					stop_loss = round(high - high * 0.01, 2)
 					message = "[{}]\tPercent Difference: {}% --> Entry ${}".format(symbol, percent_diff, high)
+					message += "\t[Target = ${} :: Stop Loss = ${}]".format(target, stop_loss)
 					message += "\n\tVolume: " + row[9]
 					message += "\n\tNumber of shares: " + shares
 					info[percent_diff] = message
