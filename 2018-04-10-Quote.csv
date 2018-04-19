@@ -1,0 +1,36 @@
+﻿This document was exported from the paperMoney® platform which provides a simulated trading environment. All data contained herein is for educational and entertainment purposes only. TD Ameritrade its subsidiaries and/or affiliates are not responsible for the accuracy of any of these exported data.
+
+Quote on 4/10/18 19:10:59
+
+Watchlist
+Symbol,Last,,Quote Trend,Net Chng,Bid,Ask,BS,AS,Volume,Open,High,Low,52High,52Low
+SELB,9.36,Range Bound,"instrument=SELB
+trend=[null, null, null, null, null, null, null, null, null, null]
+headPointer=0
+separatorPointer=-1
+currentSessionEndTime=Wed Dec 31 16:00:00 PST 1969
+",-1.68,9.20,9.38,10,3,"1,705,178",8.51,10.6844,8.44,24.02,7.95
+PAY,22.78,Uptrend,"instrument=PAY
+trend=[null, null, null, null, null, null, null, null, null, null]
+headPointer=0
+separatorPointer=-1
+currentSessionEndTime=Wed Dec 31 16:00:00 PST 1969
+",+7.78,22.50,22.87,1,15,"41,270,475",22.81,22.87,22.70,22.87,14.90
+SPPI,20.76,Uptrend,"instrument=SPPI
+trend=[null, null, null, null, null, null, null, null, null, null]
+headPointer=0
+separatorPointer=-1
+currentSessionEndTime=Wed Dec 31 16:00:00 PST 1969
+",+6.13,21.94,21.95,27,3,"12,500,159",17.49,20.82,17.40,23.50,5.47
+WATT,18.31,Range Bound,"instrument=WATT
+trend=[null, null, null, null, null, null, null, null, null, null]
+headPointer=0
+separatorPointer=-1
+currentSessionEndTime=Wed Dec 31 16:00:00 PST 1969
+",+1.66,18.45,18.68,2,5,"6,232,494",19.98,19.98,18.00,33.50,6.91
+CHFS,3.09,N/A,"instrument=CHFS
+trend=[null, null, null, null, null, null, null, null, null, null]
+headPointer=0
+separatorPointer=-1
+currentSessionEndTime=Wed Dec 31 16:00:00 PST 1969
+",+.21,2.98,3.08,5,2,"2,464,586",3.02,3.27,2.91,45.00,2.50
