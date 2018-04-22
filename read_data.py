@@ -5,7 +5,7 @@ from tkinter import *
 
 ACCOUNT_SIZE = 5000
 root = ''
-
+num_refreshes = 0
 """
 	main() loads the column names of each entry in the table.
 
@@ -17,6 +17,7 @@ Returns:
 def main():
 	global root
 	root = Tk()
+	root.title("Stock Info")
 
 	# Set up Labels
 	# use 'sticky=(N, S, E, or W)' argument for alignment 
@@ -73,7 +74,7 @@ Returns:
 def get_data(reader):
 	percent_diff_list = []
 	info = {}
-	print("-"*50)
+
 	for row in reader:
 		if len(row) >= 15:
 			try:
@@ -116,6 +117,7 @@ Returns:
 	None
 """
 def load_gui(percent_diff_list, info):
+	global num_refreshes
 	row_number = 1
 
 	for p in sorted(percent_diff_list, reverse=True):
@@ -136,6 +138,8 @@ def load_gui(percent_diff_list, info):
 		row_number += 1
 
 	# TODO: ensure that the file is closed before reopening in case of changes.
+	print("Refresh ({})\n".format(num_refreshes))
+	num_refreshes += 1
 	refresh_button = Button(root, text="Refresh", command=open_file)
 	refresh_button.grid(row=row_number, column=5)
 	root.mainloop()
