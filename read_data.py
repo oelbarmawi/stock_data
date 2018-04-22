@@ -88,8 +88,10 @@ def get_data(reader):
 				target = str(round(high + high * 0.1, 2))
 				stop_loss = str(round(high - high * 0.01, 2))
 
-				# Find condition for correct functionality. (Open >?< Current/Last)
-				bg_color = "green" if high > low else "red"
+				#'bg_color' represents if the stock is winning or losing
+				open_price = float(row[10])
+				last_price = float(row[1])
+				bg_color = "green" if open_price <= last_price else "red"
 
 				dollar = "$"
 				details.append(symbol)
@@ -129,7 +131,7 @@ def load_gui(percent_diff_list, info):
 		target = details[4]
 		stop_loss = details[5]
 		bg_color = details[6]
-		Label(root, text=symbol).grid(row=row_number, column=0)
+		Label(root, text=symbol, bg=bg_color).grid(row=row_number, column=0)
 		Label(root, text=percent_diff).grid(row=row_number, column=1)
 		Label(root, text=high).grid(row=row_number, column=2)
 		Label(root, text=shares).grid(row=row_number, column=3)
